@@ -88,7 +88,7 @@ class _ForgotPassState extends State<ForgotPass> {
                                 child: const Texts(
                                   'login',
                                   size: 15,
-                                  color: Colors.blue,
+                                  color: Color.fromARGB(255, 45, 45, 46),
                                 )).fadeInList(3, false)
                           ],
                         )

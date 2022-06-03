@@ -23,7 +23,7 @@ class _MyPersonalNavPageState extends State<MyPersonalNavPage> {
             child: GestureDetector(
               onTap: () {
                 _isElevated = !_isElevated;
-                Future.delayed(const Duration(milliseconds: 270)).then(
+                Future.delayed(const Duration(milliseconds: 320)).then(
                     (value) => Navigator.pushReplacementNamed(context, '/'));
                 setState(() {});
               },

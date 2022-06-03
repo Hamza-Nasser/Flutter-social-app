@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_social_app/constants.dart';
 //import 'package:flutter/widgets.dart';
 import 'package:flutter_social_app/utilities/constants.dart';
 import 'package:flutter_social_app/widgets/custom_form_button.dart';
@@ -107,7 +108,7 @@ class _RegisterState extends State<Register> {
                                 child: const Texts(
                                   'login',
                                   size: 15,
-                                  color: Colors.blue,
+                                  color: defaultColor,
                                 )).fadeInList(4, false)
                           ],
                         )

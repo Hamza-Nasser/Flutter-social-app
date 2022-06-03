@@ -34,6 +34,7 @@ class CustomFormButton extends StatelessWidget {
         size: 15,
       ),
       style: ButtonStyle(
+        backgroundColor: MaterialStateProperty.all<Color>(const Color.fromARGB(255, 45, 45, 46)),
         elevation: MaterialStateProperty.all<double>(0),
         shape: MaterialStateProperty.all<RoundedRectangleBorder>(
           const RoundedRectangleBorder(

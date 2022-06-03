@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_social_app/constants.dart';
 import 'package:flutter_social_app/extensions/extensions.dart';
 import 'package:flutter_social_app/utilities/constants.dart';
 import 'package:flutter_social_app/widgets/custom_form_button.dart';
@@ -61,7 +62,7 @@ class _LogInState extends State<LogIn> {
                                 child: const Texts(
                                   'Forgot password?',
                                   size: 15,
-                                  color: Colors.blue,
+                                  color: defaultColor,
                                 ).fadeInList(3, false))
                           ],
                         ),
@@ -70,6 +71,7 @@ class _LogInState extends State<LogIn> {
                           children: [
                             Expanded(
                               child: CustomFormButton(
+                                
                                 text: 'Submit',
                                 formKey: loginFormKey,
                                 nextRout: 'home',
@@ -92,7 +94,7 @@ class _LogInState extends State<LogIn> {
                                 child: const Texts(
                                   'register',
                                   size: 15,
-                                  color: Colors.blue,
+                                  color: defaultColor,
                                 )).fadeInList(5, false)
                           ],
                         )
