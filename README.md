@@ -1,4 +1,4 @@
-# flutter_social_app_cloned
+# Social App
 
 A new Flutter project.
 
