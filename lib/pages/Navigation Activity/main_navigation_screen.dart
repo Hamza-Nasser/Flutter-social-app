@@ -35,13 +35,6 @@ class _MainNavigationScreenState extends State<MainNavigationScreen> {
             color: Colors.black,
           ).fadeInList(5, false),
           elevation: 0.0,
-          leading: IconButton(
-            icon: const Icon(
-              Icons.arrow_back_ios,
-              color: Colors.black,
-            ).fadeInList(5, false),
-            onPressed: () => Navigator.pop(context),
-          ),
         ),
       backgroundColor: Colors.grey[200],
       body: pages[currentTappedIndex],
