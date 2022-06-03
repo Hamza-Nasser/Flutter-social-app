@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_social_app/pages/Navigation%20Activity/main_nav_page.dart';
+import 'package:flutter_social_app/pages/Navigation%20Activity/main_navigation_screen.dart';
 import 'package:flutter_social_app/widgets/texts.dart';
 
 class CustomFormButton extends StatelessWidget {
