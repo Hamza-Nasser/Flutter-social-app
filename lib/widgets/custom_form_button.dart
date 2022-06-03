@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_social_app/pages/Navigation%20Activity/main_nav_page.dart';
 import 'package:flutter_social_app/widgets/texts.dart';
 
 class CustomFormButton extends StatelessWidget {
@@ -24,7 +25,8 @@ class CustomFormButton extends StatelessWidget {
               .showSnackBar(const SnackBar(content: Texts('Check your mail!', color: Colors.white, size: 12,)));
         }
         if (formKey.currentState!.validate()) {
-          Navigator.pushReplacementNamed(context, '/$nextRout');
+          await Future.delayed(const Duration(seconds: 1));
+          Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => const MainNavigationScreen()));
         }
       },
       child: Texts(text, 

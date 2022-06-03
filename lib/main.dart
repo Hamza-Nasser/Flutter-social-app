@@ -10,7 +10,7 @@ void main() {
       debugShowCheckedModeBanner: false,
       home: const LogIn(),
       routes: {
-        '/home': (context) => const NavBarMain(),
+        '/home': (context) => const MainNavigationScreen(),
         '/login': (context) => const LogIn(),
         '/register': (context) => const Register(),
         '/forgot_pass': (context) => const ForgotPass(),

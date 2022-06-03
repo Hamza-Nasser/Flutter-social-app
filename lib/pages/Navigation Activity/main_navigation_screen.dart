@@ -1,15 +1,18 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_social_app/extensions/extensions.dart';
+import 'package:flutter_social_app/utilities/constants.dart';
+import 'package:flutter_social_app/widgets/texts.dart';
 
 import 'my_personal_nav_page.dart';
 
-class NavBarMain extends StatefulWidget {
-  const NavBarMain({Key? key}) : super(key: key);
+class MainNavigationScreen extends StatefulWidget {
+  const MainNavigationScreen({Key? key}) : super(key: key);
 
   @override
-  _NavBarMainState createState() => _NavBarMainState();
+  _MainNavigationScreenState createState() => _MainNavigationScreenState();
 }
 
-class _NavBarMainState extends State<NavBarMain> {
+class _MainNavigationScreenState extends State<MainNavigationScreen> {
   List<Widget> pages = [
     //const HomeNavPage(),
     //const BarItemNavPage(),
@@ -24,6 +27,22 @@ class _NavBarMainState extends State<NavBarMain> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+          centerTitle: true,
+          backgroundColor: Theme.of(context).scaffoldBackgroundColor,
+          title: Texts(
+            Constants.appName,
+            color: Colors.black,
+          ).fadeInList(5, false),
+          elevation: 0.0,
+          leading: IconButton(
+            icon: const Icon(
+              Icons.arrow_back_ios,
+              color: Colors.black,
+            ).fadeInList(5, false),
+            onPressed: () => Navigator.pop(context),
+          ),
+        ),
       backgroundColor: Colors.grey[200],
       body: pages[currentTappedIndex],
       bottomNavigationBar: BottomNavigationBar(

@@ -22,10 +22,10 @@ class _MyPersonalNavPageState extends State<MyPersonalNavPage> {
             height: 35,
             child: GestureDetector(
               onTap: () {
-                setState(() {
-                  _isElevated = !_isElevated;
-                  Navigator.pushNamed(context, '/');
-                });
+                _isElevated = !_isElevated;
+                Future.delayed(const Duration(milliseconds: 270)).then(
+                    (value) => Navigator.pushReplacementNamed(context, '/'));
+                setState(() {});
               },
             ),
             decoration: BoxDecoration(
@@ -49,7 +49,7 @@ class _MyPersonalNavPageState extends State<MyPersonalNavPage> {
                   : null,
               borderRadius: BorderRadius.circular(10),
             ),
-            duration: const Duration(milliseconds: 200),
+            duration: const Duration(milliseconds: 300),
           ),
         ],
       ),
