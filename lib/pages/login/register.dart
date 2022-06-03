@@ -102,8 +102,7 @@ class _RegisterState extends State<Register> {
                             ).fadeInList(5, false),
                             TextButton(
                                 onPressed: () {
-                                  Navigator.pushReplacementNamed(
-                                      context, '/login');
+                                  Navigator.pop(context);
                                 },
                                 child: const Texts(
                                   'login',

@@ -83,8 +83,7 @@ class _ForgotPassState extends State<ForgotPass> {
                             ).fadeInList(4, false),
                             TextButton(
                                 onPressed: () {
-                                  Navigator.pushReplacementNamed(
-                                      context, '/login');
+                                  Navigator.pop(context);
                                 },
                                 child: const Texts(
                                   'login',
