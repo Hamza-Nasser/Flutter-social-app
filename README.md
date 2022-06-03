@@ -2,6 +2,10 @@
 
 A new Flutter project.
 
+#Note
+
+There are some files.dart never used yet. they'll be used in the future.
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
